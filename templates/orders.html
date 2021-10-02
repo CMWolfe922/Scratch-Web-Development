@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Entry</title>
+</head>
+<body>
+    <section>
+        <!-- PLACE PICTURE OF LOGO IN THIS SECTION -->
+        <div>
+            <h1>COURIER</h1>
+            <p>This is the COURIER order entry form. Please fill this out and hit submit and your order will be placed.</p>
+        </div>
+    </section>
+
+    <!-- CREATE FORM SECTION -->
+    <form action="" method="post">
+        <!-- PACKAGE -->
+        <div>
+            <h2>Package Description:</h2>
+            <p>Please enter the correct information to describe the package.</p>
+        </div>
+        <div>
+            <!-- Get Package Information -->
+            <label for="package_type">Package Type:</label>
+            <select name="package_type" id="package_selection">
+                <option value="package_type">Envelope</option>
+                <option value="package_type">Bag</option>
+                <option value="package_type">Box</option>
+                <option value="package_type">pallet</option>
+                <option value="package_type">Tote</option>
+            </select>
+        </div>
+        <!-- PICK UP -->
+        <div>
+            <!-- Contact Info -->
+            <label for="pu_contact">Name: </label>
+            <input type="text" name="pu_contact" id="PoC">
+
+            <label for="pu_number">Phone Number:</label>
+            <input type="number" name="pu_number" id="PoC">
+
+            <label for="pu_email">Email:</label>
+            <input type="email" name="pu_email" id="PoC">
+        </div>
+    </form>
+</body>
+</html>
