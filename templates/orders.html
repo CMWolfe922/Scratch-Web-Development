@@ -17,6 +17,7 @@
 
     <!-- CREATE FORM SECTION -->
     <form action="" method="post">
+
         <!-- PACKAGE -->
         <div>
             <h2>Package Description:</h2>
@@ -33,17 +34,25 @@
                 <option value="package_type">Tote</option>
             </select>
         </div>
+
         <!-- PICK UP -->
+        <div>
+            <h2>Point of Contact: Pickup</h2>
+            <p>This is the point-of-contact information for whoever will be at the pickup location.
+                We recommend having someone on-site but if that isn't possible, we need someone to contact
+                incase the driver runs into any issues.
+            </p>
+        </div>
         <div>
             <!-- Contact Info -->
             <label for="pu_contact">Name: </label>
-            <input type="text" name="pu_contact" id="PoC">
+            <input type="text" name="pu_contact" id="PoC-name">
 
             <label for="pu_number">Phone Number:</label>
-            <input type="number" name="pu_number" id="PoC">
+            <input type="tel" name="pu_number" id="PoC-phone_number">
 
             <label for="pu_email">Email:</label>
-            <input type="email" name="pu_email" id="PoC">
+            <input type="email" name="pu_email" id="PoC-email">
         </div>
     </form>
 </body>
