@@ -20,10 +20,9 @@
 
         <!-- PACKAGE -->
         <div>
-            <h2>Package Description:</h2>
-            <p>Please enter the correct information to describe the package.</p>
-        </div>
-        <div>
+            <fieldset class="package-fieldset" id="order-entry">
+            <legend><h2>Enter Package Information</h2></legend>
+
             <!-- Get Package Information -->
             <label for="package_type">Package Type:</label>
             <select name="package_type" id="package_selection">
@@ -37,11 +36,15 @@
             <label for="pckg_qty">Qty: <input type="number" name="pckg_qty" id="package_quantity"></label>
 
             <!-- Unit type used for weight of the package -->
-            <fieldset class="weight-unit-type" id="order-entry">
-                <legend>Enter Total Weight and Unit of Measure</legend>
                 <label for="package-weight">Weight: <input type="number" name="weight" id="package-weight"></label>
                 <label for="kilos">Kgs. <input type="radio" name="unit-type" id="kilos"></label>
                 <label for="pounds">Lbs. <input type="radio" name="unit-type" id="pounds"></label>
+
+                <p>
+                <sub><i>The package information is extremely important! Please make sure this information is as accurate as possible.
+                This will help prevent wasted attempts. If a driver arrives to pickup a package and the description is incorrect,
+                making the driver unable to pickup and make the delivery, you will be charged for an attempt.</i></sub>
+                </p>
             </fieldset>
         </div>
 
