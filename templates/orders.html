@@ -10,7 +10,7 @@
     <section>
         <!-- PLACE PICTURE OF LOGO IN THIS SECTION -->
         <div>
-            <h1>COURIER</h1>
+            <h1>ORDER-ENTRY</h1>
             <p>This is the COURIER order entry form. Please fill this out and hit submit and your order will be placed.</p>
         </div>
     </section>
@@ -56,20 +56,30 @@
                 incase the driver runs into any issues.
             </p>
         </div>
-        <div>
-            <!-- Contact Info -->
+
+        <!-- Contact Info -->
+        <div class="contact-info" id="contact-name">
             <label for="pu-poc-fname">First Name: <input type="text" name="pu-poc-fname" id="PoC-fname"></label>
-
             <label for="pu-poc-lname">Last Name: <input type="text" name="pu-poc-lname" id="PoC-lname"></label>
-
+        </div>
+        <div class="contact-info" id="contact-phone-email">
             <label for="pu_number">Phone Number: <input type="tel" name="pu_number" id="PoC-phone_number"></label>
-
             <label for="pu_email">Email: <input type="email" name="pu_email" id="PoC-email"></label>
         </div>
 
+        <!-- Address Information for Pickup Location -->
         <div>
-            <!-- Address Information for Pickup Location -->
-
+            <label for="pickup-address" id="pickup-street-address">Street Address: <input type="text" name="street-address" id="pickup-address"></label>
+            <label for="pickup-address2" id="pickup-street-address2">Address #2: <input type="text" name="street-address2" id="pickup-address2"></label>
+        </div>
+        <div>
+            <label for="pickup-city" id="pickup-city">City: <input type="text" name="city" id="pickup-city"></label>
+            <label for="pickup-state" id="pickup-state">State: <input type="text" name="state" id="pickup-state"></label>
+            <label for="pickup-zip" id="pickup-zip">Zip: <input type="text" name="zip" id="pickup-zip"></label>
+        </div>
+        <!-- Pickup Notes: Notes about the pickup -->
+        <div>
+            <label for="pickup-notes">Notes: <input type="text" name="note-box" id="pickup-notes" placeholder="Please enter any additional pickup instructions here..."></label>
         </div>
     </form>
 </body>
