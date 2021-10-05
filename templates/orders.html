@@ -16,7 +16,7 @@
     </section>
 
     <!-- CREATE FORM SECTION -->
-    <form action="" method="post">
+    <form action="" method="post" id="order-entry">
 
         <!-- PACKAGE -->
         <div>
@@ -34,8 +34,15 @@
                 <option value="package_type">Tote</option>
             </select>
 
-            <label for="pckg_qty">Qty:</label>
-            <input type="number" name="pckg_qty" id="package_quantity">
+            <label for="pckg_qty">Qty: <input type="number" name="pckg_qty" id="package_quantity"></label>
+
+            <!-- Unit type used for weight of the package -->
+            <fieldset class="weight-unit-type" id="order-entry">
+                <legend>Enter Total Weight and Unit of Measure</legend>
+                <label for="package-weight">Weight: <input type="number" name="weight" id="package-weight"></label>
+                <label for="kilos">Kgs. <input type="radio" name="unit-type" id="kilos"></label>
+                <label for="pounds">Lbs. <input type="radio" name="unit-type" id="pounds"></label>
+            </fieldset>
         </div>
 
         <!-- PICK UP -->
@@ -55,6 +62,11 @@
             <label for="pu_number">Phone Number: <input type="tel" name="pu_number" id="PoC-phone_number"></label>
 
             <label for="pu_email">Email: <input type="email" name="pu_email" id="PoC-email"></label>
+        </div>
+
+        <div>
+            <!-- Address Information for Pickup Location -->
+
         </div>
     </form>
 </body>
